@@ -256,7 +256,7 @@ GET /api/stories – List stories
 POST /api/stories – Create story
 DELETE /api/stories/:id – Delete story
 
-Frontend Pages
+# Frontend Pages
 
 Home: Feed of posts and stories
 Login: Secure login
@@ -265,16 +265,20 @@ Profile: User’s profile with posts and followers
 
 Chat: Real-time messaging
 
-Contributing
+# Contributing
 
 Contributions are welcome.
 
 Fork the repository
+
 Create a new branch (git checkout -b feature-xyz)
+
 Commit changes (git commit -m "Add new feature")
+
 Push branch (git push origin feature-xyz)
+
 Open a Pull Request
 
-License
+# License
 
 This project is licensed under the MIT License.
