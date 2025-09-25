@@ -160,7 +160,7 @@ chatgram/
 │  └─ vite.config.js               
 │
 └─ README.md                       
-
+```
 
 
 # Installation
@@ -198,89 +198,69 @@ DB_PASSWORD=yourpassword
 DB_NAME=chatgramdb
 JWT_SECRET=your_jwt_secret
 CLOUDINARY_URL=your_cloudinary_url
-
+```
 ```Run backend
 cd backend
 npm run dev
-
-Run frontend
+```
+```Run frontend
 cd frontend
 npm run dev
-
+```
 Available Scripts
 
 Backend
-
+```bash
 npm run dev – Run with nodemon
-
 npm start – Production server
-
+```
 Frontend
-
+```bash
 npm run dev – Development mode
-
 npm run build – Build for production
-
 npm run preview – Preview build
-
+```
 API Endpoints
 
 Auth
 
 POST /api/auth/register – Register
-
 POST /api/auth/login – Login
-
 POST /api/auth/logout – Logout
 
 Users
 
 GET /api/users/:id – Get profile
-
 PUT /api/users/:id – Update profile
-
 POST /api/users/:id/follow – Follow
-
 POST /api/users/:id/unfollow – Unfollow
 
 Posts
-
 GET /api/posts – List posts
-
 POST /api/posts – Create post
-
 PUT /api/posts/:id – Update post
-
 DELETE /api/posts/:id – Delete post
 
 Comments
 
 POST /api/comments – Add comment
-
 DELETE /api/comments/:id – Delete comment
 
 Chat
-
 GET /api/chats/:id – Get messages
-
 POST /api/chats – Send message
 
 Stories
 
 GET /api/stories – List stories
-
 POST /api/stories – Create story
-
 DELETE /api/stories/:id – Delete story
 
 Frontend Pages
 
 Home: Feed of posts and stories
-
 Login: Secure login
-
 Register: Create an account
-
 Profile: User’s profile with posts and followers
 
 Chat: Real-time messaging
@@ -290,13 +270,9 @@ Contributing
 Contributions are welcome.
 
 Fork the repository
-
 Create a new branch (git checkout -b feature-xyz)
-
 Commit changes (git commit -m "Add new feature")
-
 Push branch (git push origin feature-xyz)
-
 Open a Pull Request
 
 License
