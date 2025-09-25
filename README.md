@@ -172,25 +172,25 @@ Prerequisites
 
 # Steps
 
-# Clone repository
+## Clone repository
 ```bash
 git clone https://github.com/chatgram-platform/chatgram-app.git
 cd chatgram
 ```
 
 
-# Install backend dependencies
+## Install backend dependencies
 cd backend
 npm install
 
-# Install frontend dependencies
+## Install frontend dependencies
 cd ../frontend
 npm install
 
 Set up environment variables (see below), then start servers.
 
 
- # Environment Variables
+ ## Environment Variables
 
 Inside backend/.env:
 ```js
@@ -259,7 +259,7 @@ GET /api/stories – List stories
 POST /api/stories – Create story
 DELETE /api/stories/:id – Delete story
 
-# Frontend Pages
+## Frontend Pages
 
 Home: Feed of posts and stories
 Login: Secure login
@@ -268,19 +268,6 @@ Profile: User’s profile with posts and followers
 
 Chat: Real-time messaging
 
-# Contributing
-
-Contributions are welcome.
-
-Fork the repository
-
-Create a new branch (git checkout -b feature-xyz)
-
-Commit changes (git commit -m "Add new feature")
-
-Push branch (git push origin feature-xyz)
-
-Open a Pull Request
 
 # License
 
