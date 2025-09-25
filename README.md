@@ -173,8 +173,9 @@ Prerequisites
 # Steps
 
 # Clone repository
-git clone https://github.com/chatgram-platform/chatgram-app.git
+```git clone https://github.com/chatgram-platform/chatgram-app.git
 cd chatgram
+```
 
 # Install backend dependencies
 cd backend
