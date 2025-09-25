@@ -214,14 +214,14 @@ npm run dev
 cd frontend
 npm run dev
 ```
-Available Scripts
+#Available Scripts
 
-Backend
+##Backend
 ```bash
 npm run dev – Run with nodemon
 npm start – Production server
 ```
-Frontend
+##Frontend
 ```bash
 npm run dev – Development mode
 npm run build – Build for production
