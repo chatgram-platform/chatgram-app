@@ -180,12 +180,16 @@ cd chatgram
 
 
 ## Install backend dependencies
+```bash
 cd backend
 npm install
+```
 
 ## Install frontend dependencies
+```bash
 cd ../frontend
 npm install
+```
 
 Set up environment variables (see below), then start servers.
 
