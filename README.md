@@ -1,219 +1,140 @@
-ChatGram
+# ChatGram  
+
+ChatGram is a fullstack social media platform that enables users to connect, share posts & stories, engage through comments and likes, and chat in real-time.  
+It is designed to be lightweight, responsive, and scalable, making it ideal for interactive communication, content sharing, and user engagement.  
+
+---
+
+## Table of Contents  
+- [Project Overview](#project-overview)  
+- [Problem Statement](#problem-statement)  
+- [Goals and Objectives](#goals-and-objectives)  
+- [User Stories](#user-stories)  
+- [Functional Requirements](#functional-requirements)  
+- [Non-functional Requirements](#non-functional-requirements)  
+- [Technology Stack](#technology-stack)  
+- [System Features](#system-features)  
+- [Project Structure](#project-structure)  
+- [Installation](#installation)  
+- [Environment Variables](#environment-variables)  
+- [Usage](#usage)  
+- [Available Scripts](#available-scripts)  
+- [API Endpoints](#api-endpoints)  
+- [Frontend Pages](#frontend-pages)  
+- [Contributing](#contributing)  
+- [License](#license)  
+
+---
+
+## Project Overview  
+ChatGram is a responsive, secure, and scalable social media application.  
+
+Features include:  
+- Authentication (JWT)  
+- Post and Story Management  
+- Real-time Chat with Socket.IO  
+- Likes and Comments  
+- Follow/Unfollow System  
+- Notifications  
+- Admin Moderation Tools  
+
+It balances rich functionality with ease of deployment and maintainability.  
+
+---
+
+## Problem Statement  
+Most existing social media apps are either:  
+- Too complex for small-scale deployments, or  
+- Lack centralized content and user control.  
+
+ChatGram solves this by offering a secure, efficient, and manageable solution for both users and administrators.  
+
+---
+
+## Goals and Objectives  
+- Build a secure and scalable fullstack platform  
+- Provide CRUD operations for posts and stories with media support  
+- Implement real-time messaging with Socket.IO  
+- Enable followers/following and personalized feeds  
+- Deliver a responsive UI (React + Tailwind)  
+- Secure sessions with JWT authentication  
+- Provide admin tools for moderation and analytics  
+
+---
+
+## User Stories  
+**Visitor**  
+- Browse public posts  
+- View trending content  
+
+**Registered User**  
+- Sign up / Log in securely  
+- Create, edit, and delete posts and stories  
+- Like and comment on posts  
+- Follow/unfollow users  
+- Real-time chat and notifications  
+
+**Administrator**  
+- Moderate users, posts, and chats  
+- Manage flagged content  
+- Access analytics  
+
+---
+
+## Functional Requirements  
+- Authentication: JWT, bcrypt, password reset  
+- Posts/Stories: CRUD, media upload, likes, comments  
+- Chat: Real-time private messaging, history storage  
+- Followers/Friends: Follow/unfollow system  
+- Notifications: Real-time alerts for all activities  
+- Search: Find users and content  
+- Admin Panel: Content moderation, analytics  
+
+---
+
+## Non-functional Requirements  
+- Performance: Pages load in under 3 seconds  
+- Scalability: Support 1000+ concurrent users  
+- Security: JWT, bcrypt, input validation  
+- Usability: Fully responsive  
+- Reliability: Error handling and minimal downtime  
+
+---
 
-ChatGram is a fullstack social media platform that enables users to connect, share posts and stories, engage through comments and likes, and chat in real-time. The system is designed to provide a lightweight yet scalable social platform, suitable for interactive communication, content sharing, and user engagement.
+## Technology Stack  
+**Frontend**  
+- React.js, Tailwind CSS  
+- Axios, Context API / Redux  
 
-The platform is built using Node.js + Express + MySQL for the backend and React + Tailwind CSS for the frontend, with Socket.IO enabling real-time communication.
+**Backend**  
+- Node.js, Express.js  
+- Socket.IO, JWT, Bcrypt  
 
-Table of Contents
+**Database**  
+- MySQL (Sequelize ORM)  
 
-Project Overview
+**Deployment & DevOps**  
+- GitHub, Vercel/Netlify/Render  
+- Postman (API Testing)  
 
-Problem Statement
+**Cloud / Storage**  
+- Cloudinary / AWS S3  
 
-Goals and Objectives
+---
 
-User Stories
+## System Features  
+- User Management: Registration, login, profile updates  
+- Post & Story Management  
+- Messaging: Real-time chat with history  
+- Notifications  
+- Search users and content  
+- Admin Panel for moderation and analytics  
 
-Functional Requirements
+---
 
-Non-functional Requirements
+## Project Structure  
 
-Technology Stack
-
-System Features
-
-Project Structure
-
-Installation
-
-Environment Variables
-
-Usage
-
-Available Scripts
-
-API Endpoints
-
-Frontend Pages
-
-Contributing
-
-License
-
-Project Overview
-
-ChatGram is a responsive, secure, and scalable social media application. It supports user registration, authentication, content sharing (posts and stories), real-time chat, and engagement through likes, comments, and notifications.
-
-It addresses the need for a streamlined social platform that balances rich functionality with ease of deployment and maintainability.
-
-Problem Statement
-
-Many existing social media applications are either too complex for smaller deployments or lack centralized control over user activity. ChatGram provides a secure, efficient, and manageable solution where users can engage with content and communicate while administrators maintain oversight of community standards and user-generated content.
-
-Goals and Objectives
-
-Build a secure and scalable fullstack platform.
-
-Provide CRUD operations for posts and stories with media support.
-
-Implement real-time messaging using Socket.IO.
-
-Enable follower/following interactions and personalized feeds.
-
-Deliver responsive and intuitive UI using React and Tailwind CSS.
-
-Secure user sessions with JWT authentication.
-
-Provide administrative tools for moderation and analytics.
-
-User Stories
-
-Visitor
-
-Browse public posts.
-
-View trending content.
-
-Registered User
-
-Sign up and log in securely.
-
-Create, edit, and delete posts and stories.
-
-Like and comment on posts.
-
-Follow and unfollow users.
-
-Send and receive real-time messages.
-
-Receive notifications for likes, comments, and messages.
-
-Administrator
-
-Moderate posts, users, and chat content.
-
-Approve or reject flagged content.
-
-Access analytics on engagement and activity.
-
-Functional Requirements
-Authentication
-
-Secure registration and login using JWT.
-
-Password hashing with bcrypt.
-
-Reset password with email verification.
-
-Posts and Stories
-
-CRUD operations for posts and stories.
-
-Image and media uploads.
-
-Like and comment functionality.
-
-Filtering by user or category.
-
-Chat / Messaging
-
-Real-time private messaging using Socket.IO.
-
-Storage of chat history in MySQL.
-
-Notifications for new messages.
-
-Followers / Friends
-
-Follow/unfollow system.
-
-Personalized feed based on followed users.
-
-Notifications
-
-Real-time alerts for messages, likes, comments, and story views.
-
-Search
-
-Efficient search for users and content.
-
-Admin Panel
-
-Moderate content and manage users.
-
-Monitor flagged messages.
-
-Generate reports on engagement.
-
-Non-functional Requirements
-
-Performance: Load main pages in under 3 seconds.
-
-Scalability: Support 1000+ concurrent users.
-
-Security: Use secure password hashing, JWT authentication, and input validation.
-
-Usability: Fully responsive UI.
-
-Reliability: Graceful error handling and minimal downtime.
-
-Technology Stack
-
-Frontend
-
-React.js
-
-Tailwind CSS
-
-Axios
-
-Context API / Redux
-
-Backend
-
-Node.js
-
-Express.js
-
-Socket.IO
-
-JWT
-
-Bcrypt
-
-Database
-
-MySQL (with Sequelize ORM)
-
-DevOps / Deployment
-
-GitHub for version control
-
-Render, Vercel, or Netlify for hosting
-
-Postman for API testing
-
-Cloud / Storage
-
-Cloudinary or AWS S3 for media uploads
-
-System Features
-
-User Management: Registration, login, and profile updates.
-
-Post Management: Create, edit, delete posts with media support.
-
-Story Management: Temporary stories with viewing functionality.
-
-Messaging: Real-time chat with persistent message history.
-
-Notifications: Alerts for interactions and activities.
-
-Search: Efficient discovery of users and content.
-
-Admin Panel: Moderation and analytics for content and users.
-
-Project Structure
+```bash
 chatgram/
 ├─ backend/                        
 │  ├─ config/                      
@@ -240,43 +161,36 @@ chatgram/
 │
 └─ README.md                       
 
-Installation
+
+
+# Installation
 Prerequisites
 
-Node.js v18+
+  - Node.js v18+
+ - MySQL
+ - npm or yarn
 
-MySQL
+# Steps
 
-npm or yarn
-
-Steps
-
-Clone the repository:
-
+# Clone repository
 git clone https://github.com/chatgram-platform/chatgram-app.git
 cd chatgram
 
-
-Install backend dependencies:
-
+# Install backend dependencies
 cd backend
 npm install
 
-
-Install frontend dependencies:
-
+# Install frontend dependencies
 cd ../frontend
 npm install
 
+Set up environment variables (see below), then start servers.
 
-Configure environment variables.
 
-Start backend and frontend servers.
+ # Environment Variables
 
-Environment Variables
-
-Create a .env file inside backend/. Example:
-
+Inside backend/.env:
+```js
 PORT=5000
 DB_HOST=localhost
 DB_USER=root
@@ -285,16 +199,11 @@ DB_NAME=chatgramdb
 JWT_SECRET=your_jwt_secret
 CLOUDINARY_URL=your_cloudinary_url
 
-Usage
-
-Run backend:
-
+```Run backend
 cd backend
 npm run dev
 
-
-Run frontend:
-
+Run frontend
 cd frontend
 npm run dev
 
@@ -302,17 +211,17 @@ Available Scripts
 
 Backend
 
-npm run dev – Run with nodemon.
+npm run dev – Run with nodemon
 
-npm start – Production server.
+npm start – Production server
 
 Frontend
 
-npm run dev – Development mode.
+npm run dev – Development mode
 
-npm run build – Build for production.
+npm run build – Build for production
 
-npm run preview – Preview build.
+npm run preview – Preview build
 
 API Endpoints
 
@@ -366,15 +275,29 @@ DELETE /api/stories/:id – Delete story
 
 Frontend Pages
 
-Home: Feed of posts and stories.
+Home: Feed of posts and stories
 
-Login: Secure login.
+Login: Secure login
 
-Register: Create an account.
+Register: Create an account
 
-Profile: User’s profile with posts and followers.
+Profile: User’s profile with posts and followers
 
-Chat: Real-time messaging.
+Chat: Real-time messaging
+
+Contributing
+
+Contributions are welcome.
+
+Fork the repository
+
+Create a new branch (git checkout -b feature-xyz)
+
+Commit changes (git commit -m "Add new feature")
+
+Push branch (git push origin feature-xyz)
+
+Open a Pull Request
 
 License
 
