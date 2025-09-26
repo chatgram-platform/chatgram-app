@@ -2,17 +2,24 @@ import { useState, useContext } from "react";
 import API from "../api/api";
 import { AuthContext } from "../context/AuthContext";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const { login } = useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      console.log("logginfggg");
       const res = await API.post("/auth/login", { email, password });
+      console.log("res:",res)
       login({ email }, res.data.token);
+      console.log("logging in");
+      //redirect to home route
+      navigate("/");
     } catch (err) {
       alert("Login failed ❌");
     }

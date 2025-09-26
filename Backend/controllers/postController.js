@@ -3,9 +3,9 @@ const { validatePostContent } = require('../utils/validators');
 
 exports.createPost = async (req, res) => {
   try {
-    const { content } = req.body;
-    validatePostContent(content);
-    await pool.execute('INSERT INTO posts (user_id, content) VALUES (?, ?)', [req.userId, content]);
+    const { content,title } = req.body;
+    validatePostContent(content,title);
+    await pool.execute('INSERT INTO posts (user_id, content,title) VALUES (?, ?,?)', [req.userId, content,title]);
     res.status(201).json({ message: 'Post created successfully ✨' });
   } catch (err) {
     res.status(400).json({ message: 'Post creation failed', error: err.message });

@@ -4,22 +4,25 @@ import React from "react";
 
 export default function PostForm({ onPostCreated }) {
   const [content, setContent] = useState("");
+  const [title,setTitle] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!content.trim()) return alert("Post cannot be empty 😅");
 
     try {
-      await API.post("/posts", { content });
+      const res=await API.post("/posts", { content,title:"title of the post" });
+      console.log("response:",res);
       setContent("");
       onPostCreated();
     } catch (err) {
+      console.log("error:",err);
       alert("Failed to create post ❌");
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg p-4 mb-4">
+    <form onSubmit={handleSubmit} className="bg-gradient-to-r from-green-200 via-purple-200 to-blue-200 shadow-md rounded-lg p-4 mb-4">
       <textarea
         className="w-full border rounded p-2"
         placeholder="What's on your mind? 💭"
