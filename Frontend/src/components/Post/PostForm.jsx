@@ -1,5 +1,6 @@
 import { useState } from "react";
 import API from "../../api/api";
+import React from "react";
 
 export default function PostForm({ onPostCreated }) {
   const [content, setContent] = useState("");
