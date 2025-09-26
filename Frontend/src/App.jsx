@@ -5,8 +5,10 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import { AuthProvider } from "./context/AuthContext";
+import React from "react";
 
 export default function App() {
+  console.log("app is loaded");
   return (
     <AuthProvider>
       <Router>

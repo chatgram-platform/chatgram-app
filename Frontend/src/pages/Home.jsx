@@ -3,6 +3,7 @@ import API from "../api/api";
 import PostForm from "../components/Post/PostForm";
 import PostCard from "../components/Post/PostCard";
 import StoryCard from "../components/Story/StoryCard";
+import React from "react";
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
