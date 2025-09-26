@@ -20,8 +20,7 @@ It is designed to be lightweight, responsive, and scalable, making it ideal for 
 - [Usage](#usage)  
 - [Available Scripts](#available-scripts)  
 - [API Endpoints](#api-endpoints)  
-- [Frontend Pages](#frontend-pages)  
-- [Contributing](#contributing)  
+- [Frontend Pages](#frontend-pages)   
 - [License](#license)  
 
 ---
