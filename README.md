@@ -226,48 +226,63 @@ npm run dev – Development mode
 npm run build – Build for production
 npm run preview – Preview build
 ```
-API Endpoints
+# API Endpoints
 
-Auth
+### Auth
 
-POST /api/auth/register – Register
+POST /api/auth/register – Register 
+
 POST /api/auth/login – Login
+
 POST /api/auth/logout – Logout
 
-Users
+### Users
 
 GET /api/users/:id – Get profile
+
 PUT /api/users/:id – Update profile
+
 POST /api/users/:id/follow – Follow
+
 POST /api/users/:id/unfollow – Unfollow
 
-Posts
+### Posts
 GET /api/posts – List posts
+
 POST /api/posts – Create post
+
 PUT /api/posts/:id – Update post
+
 DELETE /api/posts/:id – Delete post
 
-Comments
+### Comments
 
 POST /api/comments – Add comment
+
 DELETE /api/comments/:id – Delete comment
 
-Chat
+### Chat
 GET /api/chats/:id – Get messages
+
 POST /api/chats – Send message
 
-Stories
+### Stories
 
 GET /api/stories – List stories
+
 POST /api/stories – Create story
+
 DELETE /api/stories/:id – Delete story
 
 ## Frontend Pages
 
-Home: Feed of posts and stories
-Login: Secure login
-Register: Create an account
-Profile: User’s profile with posts and followers
+ Home: Feed of posts and stories
+
+ Login: Secure login
+
+ Register: Create an account
+
+ Profile: User’s profile with posts and followers
 
 Chat: Real-time messaging
 
