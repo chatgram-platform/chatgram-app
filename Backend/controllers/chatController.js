@@ -4,14 +4,12 @@ exports.sendMessage = async (req, res) => {
   try {
     const { recipientId, content } = req.body;
     if (!content) return res.status(400).json({ message: 'Message cannot be empty ✉️' });
-
     await pool.execute('INSERT INTO messages (sender_id, recipient_id, content) VALUES (?, ?, ?)', [req.userId, recipientId, content]);
     res.status(201).json({ message: 'Message sent successfully 📬' });
   } catch (err) {
     res.status(500).json({ message: 'Failed to send message', error: err.message });
   }
 };
-
 exports.getChatHistory = async (req, res) => {
   try {
     const { userId } = req.params;

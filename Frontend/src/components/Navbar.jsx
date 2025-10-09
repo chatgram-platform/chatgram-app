@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex sticky top-0 bg-gradient-to-r from-green-200 via-purple-300 to-blue-400 justify-between items-center p-4 bg-white shadow-md">
-      <h1 className="text-xl font-bold text-blue-600">ChatGram 🚀</h1>
+      <h1 className="text-xl font-bold text-blue-600">ChatGram </h1>
       <div className="flex gap-4">
         <Link to="/" className="hover:text-blue-600">Home</Link>
         <Link to="/stories" className="hover:text-blue-600">story</Link>

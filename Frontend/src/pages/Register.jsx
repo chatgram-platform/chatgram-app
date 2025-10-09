@@ -13,7 +13,7 @@ export default function Register() {
       await API.post("/auth/register", { username, email, password });
       alert("Registration successful 🎉 Now login!");
     } catch (err) {
-      alert("Registration failed ❌");
+      alert("Registration failed ");
     }
   };
 
@@ -23,30 +23,30 @@ export default function Register() {
         onSubmit={handleSubmit}
         className="bg-white p-6 rounded-lg shadow-md w-80"
       >
-        <h2 className="text-xl font-bold mb-4">Join ChatGram 🚀</h2>
+        <h2 className="text-xl font-bold mb-4">Join ChatGram </h2>
         <input
           type="text"
           className="w-full border p-2 mb-2 rounded"
-          placeholder="Username 😎"
+          placeholder="Username "
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
           type="email"
           className="w-full border p-2 mb-2 rounded"
-          placeholder="Email 📧"
+          placeholder="Email "
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="password"
           className="w-full border p-2 mb-2 rounded"
-          placeholder="Password 🔒"
+          placeholder="Password "
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
         <button className="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600">
-          Register 🚀
+          Register 
         </button>
       </form>
     </div>

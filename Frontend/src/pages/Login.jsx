@@ -21,7 +21,7 @@ export default function Login() {
       //redirect to home route
       navigate("/");
     } catch (err) {
-      alert("Login failed ❌");
+      alert("Login failed");
     }
   };
 
@@ -31,23 +31,23 @@ export default function Login() {
         onSubmit={handleSubmit}
         className="bg-white p-6 rounded-lg shadow-md w-80"
       >
-        <h2 className="text-xl font-bold mb-4">Login to ChatGram 🚀</h2>
+        <h2 className="text-xl font-bold mb-4">Login to ChatGram </h2>
         <input
           type="email"
           className="w-full border p-2 mb-2 rounded"
-          placeholder="Email 📧"
+          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="password"
           className="w-full border p-2 mb-2 rounded"
-          placeholder="Password 🔒"
+          placeholder="Password "
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
         <button className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
-          Login 🚀
+          Login 
         </button>
       </form>
     </div>
