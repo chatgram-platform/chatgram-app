@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useState } from "react";
 import API from "../../api/api";
 import Message from "./Message";
@@ -34,10 +35,10 @@ export default function ChatWindow({ recipientId }) {
           className="border flex-grow p-2 rounded"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="Type a message ✍️"
+          placeholder="Type a message"
         />
         <button className="bg-blue-500 text-white px-4 rounded hover:bg-blue-600">
-          Send 🚀
+          Send 
         </button>
       </form>
     </div>

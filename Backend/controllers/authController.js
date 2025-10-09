@@ -4,19 +4,19 @@ const pool = require('../config/db');
 
 exports.register = async (req, res) => {
   try {
-    // console.log("register route hitted!!!");
+
     const { username, email, password } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
     try {
           await pool.execute(
-      'INSERT INTO users (username, email, password) VALUES (?, ?, ?)',
+      'INSERT INTO users (user_name, email, password_hash) VALUES (?, ?, ?)',
       [username, email, hashedPassword]
     );
     } catch (error) {
        console.log("error in register route:",error)
     }
 
-    res.status(201).json({ message: 'User registered successfully 😎' });
+    res.status(201).json({ message: 'User registered successfully' });
   } catch (err) {
     res.status(500).json({ message: 'Registration failed', error: err.message });
   }
