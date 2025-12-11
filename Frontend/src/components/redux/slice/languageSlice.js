@@ -13,7 +13,7 @@ export const languageSlice = createSlice({
       state.lang = state.lang === "en" ? "am" : "en";
     },
     setLanguage: (state, action) => {
-      state.lang = action.payload; // 'en' or 'am'
+      state.lang = action.payload; // expects 'en' or 'am'
     },
   },
 });
