@@ -7,7 +7,8 @@ import Profile from "./pages/Profile";
 import Dashboard from "./pages/dashboard";
 import { AuthProvider } from "./context/AuthContext";
 import React from "react";
-import { StoryPage } from "./components/Story/StoryPage";export default function App() {
+import { StoryPage } from "./components/Story/StoryPage";
+export default function App() {
   console.log("app is loaded");
   return (
     <AuthProvider>
