@@ -11,7 +11,7 @@ It is designed to be lightweight, responsive, and scalable, making it ideal for 
 - [Goals and Objectives](#goals-and-objectives)  
 - [User Stories](#user-stories)  
 - [Functional Requirements](#functional-requirements)  
-- [Non-functional Requirements](#non-functional-requirements)  
+- [Non-functional Requirements](#non-functional-requirements)
 - [Technology Stack](#technology-stack)  
 - [System Features](#system-features)  
 - [Project Structure](#project-structure)  
