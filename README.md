@@ -6,7 +6,7 @@ It is designed to be lightweight, responsive, and scalable, making it ideal for 
 ---
 
 ## Table of Contents  
-- [Project Overview](#project-overview)  
+- [Project Overview](#project-overview)
 - [Problem Statement](#problem-statement)  
 - [Goals and Objectives](#goals-and-objectives) 
 - [User Stories](#user-stories)  
