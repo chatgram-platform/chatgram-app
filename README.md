@@ -17,7 +17,7 @@ It is designed to be lightweight, responsive, and scalable, making it ideal for 
 - [Project Structure](#project-structure)  
 - [Installation](#installation)  
 - [Environment Variables](#environment-variables)  
-- [Usage](#usage)  
+- [Usage](#usage)
 - [Available Scripts](#available-scripts)  
 - [API Endpoints](#api-endpoints)  
 - [Frontend Pages](#frontend-pages)   
